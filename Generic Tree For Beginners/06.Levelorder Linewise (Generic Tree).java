@@ -92,7 +92,7 @@ public class Main {
   }
 
   public static void levelOrderLinewise(Node root){
-    // write your code here
+   
     Queue<Node> mainQ = new ArrayDeque<>();
     mainQ.add(root);
 
@@ -100,6 +100,7 @@ public class Main {
       Queue<Node> childQ = new ArrayDeque<>();
 
       while(mainQ.size() > 0){
+        //Do work of one Level
         Node curr = mainQ.remove();
         System.out.print(curr.data + " ");
 
