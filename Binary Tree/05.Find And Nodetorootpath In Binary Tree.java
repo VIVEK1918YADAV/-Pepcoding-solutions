@@ -95,7 +95,7 @@ public class Main {
     return false;
     
   }
-
+  // node to root
   public static ArrayList<Integer> nodeToRootPath(Node node, int data){
     
     //-ve base case
@@ -121,7 +121,7 @@ public class Main {
     return new ArrayList<>();
   }
   
-  //   // Approach -> 2  =>  root to leaf
+  //   // Approach -> 2  =>  root to node
 //   public static boolean nodeToRootPath(Node node, int data, ArrayList<Integer> curr){
 //       //-ve base case
 //       if(node == null) return false;
