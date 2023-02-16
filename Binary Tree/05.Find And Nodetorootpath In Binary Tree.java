@@ -120,6 +120,29 @@ public class Main {
     
     return new ArrayList<>();
   }
+  
+  //   // Approach -> 2  =>  root to leaf
+//   public static boolean nodeToRootPath(Node node, int data, ArrayList<Integer> curr){
+//       //-ve base case
+//       if(node == null) return false;
+      
+//       //+ve base case
+//       if(node.data == data){
+//           curr.add(node.data);
+//           return true;
+//       }
+      
+//       curr.add(node.data);
+//       boolean left = nodeToRootPath(node.left,data, curr);
+//       if(left == true) return true;
+      
+//       boolean right = nodeToRootPath(node.right,data, curr);
+//       if(right == true) return true;
+      
+//       curr.remove(curr.size()-1);
+//       return false;
+//   }
+
 
   public static void main(String[] args) throws Exception {
     BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
@@ -142,6 +165,10 @@ public class Main {
 
     ArrayList<Integer> path = nodeToRootPath(root, data);
     System.out.println(path);
+    
+//     ArrayList<Integer> path2 = new ArrayList<>();
+//     nodeToRootPath(root, data, path2);
+//     System.out.println(path2);
   }
 
 }
