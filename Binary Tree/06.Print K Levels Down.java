@@ -85,7 +85,8 @@ public class Main {
         System.out.println(node.data);
         return ;
     }
-    printKLevelsDown(node.left, k-1)
+    printKLevelsDown(node.left, k-1);
+    printKLevelsDown(node.right, k-1);
   }
 
   public static void main(String[] args) throws Exception {
